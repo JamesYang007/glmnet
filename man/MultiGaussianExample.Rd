@@ -7,9 +7,9 @@
 \format{
 List containing the following elements:
 \describe{
-\item{x}{100 by 20 matrix of numeric values.}
-\item{y}{100 by 4 matrix of numeric values, each column representing
-one response vector.}
+  \item{x}{100 by 20 matrix of numeric values.}
+  \item{y}{100 by 4 matrix of numeric values, each column representing
+    one response vector.}
 }
 }
 \usage{

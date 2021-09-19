@@ -109,7 +109,7 @@ confusion.glmnet(fit3c$fit.preval, newy = y, family="multinomial")[[idmin]]
 }
 \author{
 Trevor Hastie and Rob Tibshirani\cr Maintainer: Trevor Hastie
-\href{mailto:hastie@stanford.edu}{hastie@stanford.edu}
+<hastie@stanford.edu>
 }
 \keyword{classification}
 \keyword{models}

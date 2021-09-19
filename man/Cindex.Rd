@@ -49,7 +49,7 @@ reducing error}, Statistics in Medicine, 15, pages 361--387.
 \code{cv.glmnet}
 }
 \author{
-Trevor Hastie  \href{mailto:hastie@stanford.edu}{hastie@stanford.edu}
+Trevor Hastie  <hastie@stanford.edu>
 }
 \keyword{Cox}
 \keyword{cross-validation}

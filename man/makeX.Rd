@@ -101,6 +101,6 @@ makeX(dfn, dftn, sparse = TRUE, na.impute = TRUE)
 \code{glmnet}
 }
 \author{
-Trevor Hastie\cr Maintainer: Trevor Hastie \href{mailto:hastie@stanford.edu}{hastie@stanford.edu}
+Trevor Hastie\cr Maintainer: Trevor Hastie <hastie@stanford.edu>
 }
 \keyword{models}

@@ -7,7 +7,7 @@
 response.coxnet(y)
 }
 \arguments{
-\item{y}{Response variable. Either a class "Surv" object or a two-column
+\item{y}{Response variable. Either a class "Surv" object or a two-column 
 matrix with columns named 'time' and 'status'.}
 }
 \value{

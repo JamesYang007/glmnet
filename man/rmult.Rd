@@ -20,5 +20,5 @@ Simple function that calls the \code{rmultinom} function. It generates a class l
 for each row of its input matrix of class probabilities.
 }
 \author{
-Trevor Hastie \cr Maintainer: Trevor Hastie \href{mailto:hastie@stanford.edu}{hastie@stanford.edu}
+Trevor Hastie \cr Maintainer: Trevor Hastie <hastie@stanford.edu>
 }

@@ -7,9 +7,9 @@
 \format{
 List containing the following elements:
 \describe{
-\item{x}{500 by 30 matrix of numeric values.}
-\item{y}{Numeric vector of length 500 containing 142 ones, 174 twos
-and 184 threes.}
+  \item{x}{500 by 30 matrix of numeric values.}
+  \item{y}{Numeric vector of length 500 containing 142 ones, 174 twos
+    and 184 threes.}
 }
 }
 \usage{

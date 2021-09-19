@@ -54,7 +54,7 @@ Lasso-type Problems, JRSSB, vol 74},\cr
 }
 \author{
 Jerome Friedman, Trevor Hastie and Rob Tibshirani\cr Maintainer:
-Trevor Hastie \href{mailto:hastie@stanford.edu}{hastie@stanford.edu}
+Trevor Hastie <hastie@stanford.edu>
 }
 \keyword{models}
 \keyword{package}

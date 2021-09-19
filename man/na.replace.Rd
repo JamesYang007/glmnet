@@ -52,6 +52,6 @@ na.replace(x, m)
 \code{makeX} and \code{glmnet}
 }
 \author{
-Trevor Hastie\cr Maintainer: Trevor Hastie \href{mailto:hastie@stanford.edu}{hastie@stanford.edu}
+Trevor Hastie\cr Maintainer: Trevor Hastie <hastie@stanford.edu>
 }
 \keyword{models}

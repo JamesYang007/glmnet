@@ -13,8 +13,10 @@
 
 /* New addition */
 extern SEXP storePB(SEXP tpb);
+extern SEXP _glmnet_wls_exp(SEXP alm0SEXP, SEXP almcSEXP, SEXP alphaSEXP, SEXP mSEXP, SEXP noSEXP, SEXP niSEXP, SEXP xSEXP, SEXP rSEXP, SEXP vSEXP, SEXP intrSEXP, SEXP juSEXP, SEXP vpSEXP, SEXP clSEXP, SEXP nxSEXP, SEXP thrSEXP, SEXP maxitSEXP, SEXP aSEXP, SEXP aintSEXP, SEXP gSEXP, SEXP iaSEXP, SEXP iySEXP, SEXP izSEXP, SEXP mmSEXP, SEXP ninoSEXP, SEXP rsqcSEXP, SEXP nlpSEXP, SEXP jerrSEXP);
 static const R_CallMethodDef CallEntries[] = {
   {"storePB", (DL_FUNC) &storePB, 1},
+  {"_glmnet_wls_exp", (DL_FUNC) &_glmnet_wls_exp, 27},
   {NULL, NULL, 0}
 };
 

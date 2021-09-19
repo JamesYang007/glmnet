@@ -7,8 +7,8 @@
 \format{
 List containing the following elements:
 \describe{
-\item{x}{100 by 20 matrix of numeric values.}
-\item{y}{Numeric vector of length 100.}
+  \item{x}{100 by 20 matrix of numeric values.}
+  \item{y}{Numeric vector of length 100.}
 }
 }
 \usage{

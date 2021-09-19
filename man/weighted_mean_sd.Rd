@@ -17,6 +17,6 @@ A list with components.
 \item{sd}{vector of weighted standard deviations of columns of x}
 }
 \description{
-Helper function to compute weighted mean and standard deviation.
+Helper function to compute weighted mean and standard deviation. 
 Deals gracefully whether x is sparse matrix or not.
 }

@@ -79,7 +79,7 @@ Forward Stepwise Selection, and the Lasso}
 }
 \author{
 Jerome Friedman, Trevor Hastie and Rob Tibshirani\cr Maintainer:
-Trevor Hastie \href{mailto:hastie@stanford.edu}{hastie@stanford.edu}
+Trevor Hastie <hastie@stanford.edu>
 }
 \keyword{models}
 \keyword{regression}
