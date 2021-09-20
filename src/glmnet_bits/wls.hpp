@@ -63,10 +63,11 @@ inline wls_state wls_partial_fit(
 
         // updating of intercept term
         double d = 0.0; 
-        if (intr != 0) { d = r.sum() / xmz; }
+        double r_sum = (intr != 0 || d != 0.) ? r.sum() : 0.;
+        if (intr != 0) { d = r_sum / xmz; }
         if (d != 0.0) {
             aint += d;
-            rsqc += d * (2.0 * r.sum() - d * xmz);
+            rsqc += d * (2.0 * r_sum - d * xmz);
             dlx = std::max(dlx, xmz * d * d);
             r -= d * v;
         }
@@ -249,10 +250,11 @@ inline void wls(
 
             // updating of intercept term
             double d = 0.0; 
-            if (intr != 0) { d = r.sum() / xmz; }
+            double r_sum = (intr != 0 || d != 0.) ? r.sum() : 0.;
+            if (intr != 0) { d = r_sum / xmz; }
             if (d != 0.0) {
                 aint += d;
-                rsqc += d * (2.0 * r.sum() - d * xmz);
+                rsqc += d * (2.0 * r_sum - d * xmz);
                 dlx = std::max(dlx, xmz * d * d);
                 r -= d * v;
             }
