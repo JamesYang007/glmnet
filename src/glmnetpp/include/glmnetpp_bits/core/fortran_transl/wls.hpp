@@ -1,9 +1,10 @@
+#pragma once
 #include <cstddef>
 #include <Eigen/Core>
 #include <vector>
 #include <cmath>
 
-namespace glmnet {
+namespace glmnetpp {
 
 enum class wls_state
 {
@@ -295,4 +296,4 @@ inline void wls(
     } // end outer while
 }
 
-} // namespace glmnet
+} // namespace glmnetpp
