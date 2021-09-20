@@ -6,11 +6,6 @@
 
 using namespace Rcpp;
 
-#ifdef RCPP_USE_GLOBAL_ROSTREAM
-Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
-Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
-#endif
-
 // wls_exp
 List wls_exp(double alm0, double almc, double alpha, int m, int no, int ni, const Eigen::Map<Eigen::MatrixXd> x, Eigen::Map<Eigen::VectorXd> r, const Eigen::Map<Eigen::VectorXd> v, int intr, const Eigen::Map<Eigen::VectorXi> ju, const Eigen::Map<Eigen::VectorXd> vp, const Eigen::Map<Eigen::MatrixXd> cl, int nx, double thr, int maxit, Eigen::Map<Eigen::VectorXd> a, double aint, Eigen::Map<Eigen::VectorXd> g, Eigen::Map<Eigen::VectorXi> ia, Eigen::Map<Eigen::VectorXi> iy, int iz, Eigen::Map<Eigen::VectorXi> mm, int nino, double rsqc, int nlp, int jerr);
 RcppExport SEXP _glmnet_wls_exp(SEXP alm0SEXP, SEXP almcSEXP, SEXP alphaSEXP, SEXP mSEXP, SEXP noSEXP, SEXP niSEXP, SEXP xSEXP, SEXP rSEXP, SEXP vSEXP, SEXP intrSEXP, SEXP juSEXP, SEXP vpSEXP, SEXP clSEXP, SEXP nxSEXP, SEXP thrSEXP, SEXP maxitSEXP, SEXP aSEXP, SEXP aintSEXP, SEXP gSEXP, SEXP iaSEXP, SEXP iySEXP, SEXP izSEXP, SEXP mmSEXP, SEXP ninoSEXP, SEXP rsqcSEXP, SEXP nlpSEXP, SEXP jerrSEXP) {
