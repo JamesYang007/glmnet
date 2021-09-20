@@ -7,11 +7,11 @@
 \format{
 List containing the following elements:
 \describe{
-  \item{x}{1,000 by 30 matrix of numeric values.}
-  \item{y}{1,000 by 2 matrix with column names "time" and "status". The
-    first column consists of positive numbers representing time to event,
-    while the second column represents the status indicator
-    (0=right-censored, 1=observed).}
+\item{x}{1,000 by 30 matrix of numeric values.}
+\item{y}{1,000 by 2 matrix with column names "time" and "status". The
+first column consists of positive numbers representing time to event,
+while the second column represents the status indicator
+(0=right-censored, 1=observed).}
 }
 }
 \usage{

@@ -15,10 +15,10 @@ coxnet.deviance(
 )
 }
 \arguments{
-\item{pred}{Fit vector or matrix (usually from glmnet at a particular 
+\item{pred}{Fit vector or matrix (usually from glmnet at a particular
 lambda or a sequence of lambdas).}
 
-\item{y}{Survival response variable, must be a \code{Surv} or 
+\item{y}{Survival response variable, must be a \code{Surv} or
 \code{stratifySurv} object.}
 
 \item{x}{Optional \code{x} matrix, to be supplied if \code{pred = NULL}.}
@@ -30,7 +30,7 @@ lambda or a sequence of lambdas).}
 \item{std.weights}{If TRUE (default), observation weights are standardized
 to sum to 1.}
 
-\item{beta}{Optional coefficient vector/matrix, to be supplied if 
+\item{beta}{Optional coefficient vector/matrix, to be supplied if
 \code{pred = NULL}.}
 }
 \value{
@@ -40,19 +40,19 @@ A vector of deviances, one for each column of predictions.
 Compute the deviance (-2 log partial likelihood) for Cox model.
 }
 \details{
-Computes the deviance for a single set of predictions, or for a matrix 
+Computes the deviance for a single set of predictions, or for a matrix
 of predictions. The user can either supply the predictions
 directly through the \code{pred} option, or by supplying the \code{x} matrix
 and \code{beta} coefficients. Uses the Breslow approach to ties.
 
 The function first checks if \code{pred} is passed: if so, it is used as
 the predictions. If \code{pred} is not passed but \code{x} and \code{beta}
-are passed, then these values are used to compute the predictions. If 
+are passed, then these values are used to compute the predictions. If
 neither \code{x} nor \code{beta} are passed, then the predictions are all
 taken to be 0.
 
 \code{coxnet.deviance()} is a wrapper: it calls the appropriate internal
-routine based on whether the response is right-censored data or 
+routine based on whether the response is right-censored data or
 (start, stop] survival data.
 }
 \examples{

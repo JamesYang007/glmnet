@@ -55,7 +55,7 @@ more information. For \code{family="mgaussian"}, \code{y} is a matrix
 of quantitative responses.}
 
 \item{family}{Either a character string representing
-one of the built-in families, or else a `glm()` family object. For more
+one of the built-in families, or else a \code{glm()} family object. For more
 information, see Details section below or the documentation for response
 type (above).}
 
@@ -247,13 +247,12 @@ before computing its lambda sequence (and then unstandardizes the resulting
 coefficients); if you wish to reproduce/compare results with other software,
 best to supply a standardized y. The coefficients for any predictor
 variables with zero variance are set to zero for all values of lambda.
-
-## Details on `family` option
+\subsection{Details on \code{family} option}{
 
 From version 4.0 onwards, glmnet supports both the original built-in families,
-as well as \emph{any} family object as used by `stats:glm()`.
+as well as \emph{any} family object as used by \code{stats:glm()}.
 This opens the door to a wide variety of additional models. For example
-`family=binomial(link=cloglog)` or `family=negative.binomial(theta=1.5)` (from the MASS library).
+\code{family=binomial(link=cloglog)} or \code{family=negative.binomial(theta=1.5)} (from the MASS library).
 Note that the code runs faster for the built-in families.
 
 The built in families are specifed via a character string. For all families,
@@ -285,8 +284,9 @@ with censored times, we assume the censored times occurred just
 \emph{before} the death times in computing the Breslow approximation; if
 users prefer the usual convention of \emph{after}, they can add a small
 number to all censoring times to achieve this effect.
+}
 
-## Details on response for `family="cox"`
+\subsection{Details on response for \code{family="cox"}}{
 
 For Cox models, the response should preferably be a \code{Surv} object,
 created by the \code{Surv()} function in \pkg{survival} package. For
@@ -298,8 +298,9 @@ compatibility, right-censored data can also be passed as a
 two-column matrix with columns named 'time' and 'status'. The
 latter is a binary variable, with '1' indicating death, and '0' indicating
 right censored.)
+}
 
-## Details on `relax` option
+\subsection{Details on \code{relax} option}{
 
 If \code{relax=TRUE}
 a duplicate sequence of models is produced, where each active set in the
@@ -310,6 +311,7 @@ Generally users will not call \code{relax.glmnet} directly, unless the
 original 'glmnet' object took a long time to fit. But if they do, they must
 supply the fit, and all the original arguments used to create that fit. They
 can limit the length of the relaxed path via 'maxp'.
+}
 }
 \examples{
 

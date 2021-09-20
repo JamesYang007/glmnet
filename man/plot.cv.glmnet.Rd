@@ -70,7 +70,7 @@ Descent}
 }
 \author{
 Jerome Friedman, Trevor Hastie and Rob Tibshirani\cr Maintainer:
-Trevor Hastie <hastie@stanford.edu>
+Trevor Hastie \href{mailto:hastie@stanford.edu}{hastie@stanford.edu}
 }
 \keyword{models}
 \keyword{regression}
